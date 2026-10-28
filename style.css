@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #a8d8f0, #e8f5ff);
+  color: #203040;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+main {
+  width: 100%;
+  max-width: 450px;
+  padding: 28px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2678c8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #185da0;
+}
+
+#weatherDisplay {
+  margin-top: 24px;
+  text-align: center;
+}
+
+#temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+#status {
+  text-align: center;
+  margin-top: 16px;
+}
+
+#unitToggle {
+  display: block;
+  margin: 20px auto 0;
+}
+body.clear-day {
+  background: linear-gradient(135deg, #f9d976, #f39f86);
+}
+
+body.rain {
+  background: linear-gradient(135deg, #536976, #292e49);
+  color: white;
+}
+
+body.snow {
+  background: linear-gradient(135deg, #d7eaf5, #a6c8e0);
+}
+
+body.cloudy {
+  background: linear-gradient(135deg, #bdc3c7, #7f8c8d);
+}
