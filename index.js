@@ -1,5 +1,7 @@
 import { getWeather, processWeather } from "./weather.js";
 
+import "./style.css";
+
 const weatherForm = document.querySelector("#weatherForm");
 const locationInput = document.querySelector("#locationInput");
 const status = document.querySelector("#status");

@@ -1,4 +1,4 @@
-const API_KEY = "9C93GXFJAK9EAFVDZHF7GM5TR";
+const API_KEY = process.env.API_KEY;
 
 export async function getWeather(city) {
   const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${encodeURIComponent(city)}?unitGroup=metric&key=${API_KEY}&contentType=json`;
